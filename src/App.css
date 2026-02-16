@@ -4,13 +4,14 @@
 }
 
 #root {
-  --peach: #FF9E97;
+  --coral: #FF9E97;
   --yellow: #FDEA71;
   --dark-brown: #471C03;
   --orange: #FFB082;
 }
 
 html, body {
+  font-size: 100%;
   height: 100%;
 }
 
@@ -18,15 +19,22 @@ body{
   background: #f8f9fa;
 }
 
+.main-content{
+  display: grid;
+  
+}
+
 .header {
   width:auto;
-  background-color:#FF9E97;
+  background-color: var(--coral);
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 2rem;
   padding: 0.5rem 2rem;
   gap:2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .logo{
@@ -52,5 +60,16 @@ body{
 }
 
 .menu li:hover{
-  color: #FDEA71;
+  color: var(--yellow);
+}
+
+.greeting {
+ font-size: 3rem;
+ font-weight:600;
+}
+
+.mood-container{
+  background-color: #FDEA71;
+  margin: 1,5rem 0;
+  text-align: center;
 }

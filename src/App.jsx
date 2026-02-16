@@ -1,21 +1,28 @@
 import { useState } from 'react'
-import logo from './assets/Logo.svg';
+import Header from './components/Header.jsx'
 import './App.css'
 
 function App() {
   return (
-      <div className= "header">
-        <img 
-          src={logo}
-          alt="Mood Tracker Logo"
-          className="logo"
+    <>
+    <Header/>
+
+    <div className="main-content">
+      <p className="greeting">How are you feeling today, user?</p>
+      <div className="mood-container">
+        <label htmlFor="mood">What's your mood?</label>
+        <input
+        type='range'
+        id='mood'
+        className="mood-slider"
+        min={0}
+        max={10}
+        step={0.1}
+        defaultValue={5}
         />
-        <ul className = "menu">
-          <li>Daily log</li>
-          <li>Year review</li>
-          <li>About us</li>
-        </ul>
       </div>
+    </div>
+    </>
   )
 }
 
