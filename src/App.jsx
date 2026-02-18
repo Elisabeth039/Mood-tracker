@@ -10,7 +10,7 @@ function App() {
     <div className="main-content">
       <p className="greeting">How are you feeling today, user?</p>
       <div className="mood-container">
-        <label htmlFor="mood">What's your mood?</label>
+        <label htmlFor="mood" className="mood-qstn">What's your mood?</label>
         <input
         type='range'
         id='mood'
