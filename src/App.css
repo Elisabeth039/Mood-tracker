@@ -21,7 +21,8 @@ body{
 
 .main-content{
   display: grid;
-  
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
 
 .header {
@@ -32,7 +33,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2rem;
-  padding: 0.5rem 2rem;
+  padding: 0.25rem 2rem;
   gap:2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
@@ -64,17 +65,17 @@ body{
 }
 
 .greeting {
-  background-color: #FDEA71;
+  grid-column: 1;
   padding: 1rem;
- font-size: 3rem;
- font-weight:600;
+  font-size: 3rem;
+  font-weight:600;
 }
 
 .mood-container{
   display: flex;
   flex-direction: column;
   grid-column: 1;
-  gap:3rem;
+  gap:6rem;
   padding: 3rem 4rem;
   min-height: 8rem;
   text-align: center;
@@ -124,7 +125,56 @@ body{
   transform: translateY(-2px);
 }
 
-.main-content{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.sbmBtn-container{
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 2;
+  max-height: 4rem;
+  padding:0 2rem;
+}
+
+.submit-btn{
+  background-color: var(--dark-brown);
+  color: white;
+  padding:1rem 3rem;
+  font-size: 1.25rem;
+  box-shadow: 3px 2px 3px rgb(61, 61, 61);
+  border-radius: 12px;
+  border: none;
+}
+
+.submit-btn:hover{
+  background-color: #923905;
+}
+
+.weather-container{
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap:4rem;
+  padding: 3rem 4rem;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.weather-btns{
+  display: flex;
+  flex-direction: row;
+  gap:4rem;
+}
+
+.wth-emoji{
+  background-color: #F9ECCF;
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+  border-radius: 15px;
+  border: none;
+  font-size: 2.8rem;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 1;
+}
+
+.wth-emoji:hover{
+  background-color: #F3DCA5;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
 }
