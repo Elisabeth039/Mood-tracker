@@ -6,7 +6,7 @@
 #root {
   --coral: #FF9E97;
   --yellow: #FDEA71;
-  --dark-brown: #471C03;
+  --dark-brown: #341401;
   --orange: #FFB082;
 }
 
@@ -66,6 +66,7 @@ body{
 
 .greeting {
   grid-column: 1;
+  color: var(--dark-brown);
   padding: 1rem;
   font-size: 3rem;
   font-weight:600;
@@ -133,9 +134,14 @@ body{
   padding:0 2rem;
 }
 
+.date{
+  border: none;
+}
+
 .submit-btn{
   background-color: var(--dark-brown);
   color: white;
+  margin-left: 1rem;
   padding:1rem 3rem;
   font-size: 1.25rem;
   box-shadow: 3px 2px 3px rgb(61, 61, 61);
@@ -163,7 +169,7 @@ body{
   gap:4rem;
 }
 
-.wth-emoji{
+.wth-emoji {
   background-color: #F9ECCF;
   min-width: 4.5rem;
   min-height: 4.5rem;
@@ -177,4 +183,12 @@ body{
 .wth-emoji:hover{
   background-color: #F3DCA5;
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#sun-btn{
+  background-color:#FBEAC2 ;
+}
+
+#sun-btn:hover{
+   background-color: #F3DCA5;
 }

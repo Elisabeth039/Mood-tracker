@@ -10,6 +10,14 @@ function App() {
     <div className="main-content">
       <p className="greeting">How are you feeling today, user?</p>
       <div className="sbmBtn-container">
+        <div className="date-pick">
+          <label>Submit for:</label>
+          <input
+            type='date'
+            className='date'
+            defaultValue={new Date().toISOString().split('T')[0]}
+          />
+        </div>
         <button  className="submit-btn">Submit</button>
       </div>
       <div className="mood-container">
@@ -27,7 +35,7 @@ function App() {
       <div className="weather-container">
         <label htmlFor="weather" className="weather-qn">How was the weather today?🍂</label>
         <div id="weather" className="weather-btns">
-          <button className="wth-emoji">☀️</button>
+          <button id="sun-btn"className="wth-emoji">☀️</button>
           <button className="wth-emoji">☁️</button>
           <button className="wth-emoji">🌧️</button>
           <button className="wth-emoji">❄️</button>
