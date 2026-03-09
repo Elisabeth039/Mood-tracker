@@ -1,47 +1,21 @@
-import { useState } from 'react'
-import Header from './components/Header.jsx'
-import './App.css'
+import { useState, useRef, useEffect } from 'react';
+import Header from './components/Header.jsx';
+import Notes from './components/Notes.jsx';
+import Weather from './components/Weather.jsx';
+import Mood from './components/Mood.jsx';
+import Submit from './components/Submit.jsx';
+import './App.css';
 
 function App() {
   return (
     <>
-    <Header/>
-
+      <Header/> 
     <div className="main-content">
       <p className="greeting">How are you feeling today, user?</p>
-      <div className="sbmBtn-container">
-        <div className="date-pick">
-          <label>Submit for:</label>
-          <input
-            type='date'
-            className='date'
-            defaultValue={new Date().toISOString().split('T')[0]}
-          />
-        </div>
-        <button  className="submit-btn">Submit</button>
-      </div>
-      <div className="mood-container">
-        <label htmlFor="mood" className="mood-qn">What's your mood?</label>
-        <input
-        type='range'
-        id='mood'
-        className="mood-slider"
-        min={0}
-        max={10}
-        step={0.1}
-        defaultValue={5}
-        />
-      </div>
-      <div className="weather-container">
-        <label htmlFor="weather" className="weather-qn">How was the weather today?🍂</label>
-        <div id="weather" className="weather-btns">
-          <button id="sun-btn"className="wth-emoji">☀️</button>
-          <button className="wth-emoji">☁️</button>
-          <button className="wth-emoji">🌧️</button>
-          <button className="wth-emoji">❄️</button>
-          <button className="wth-emoji">🌬️</button>
-        </div>
-      </div>
+      <Submit/>
+      <Mood/>
+      <Weather/>
+      <Notes/>
     </div>
     </>
   )
