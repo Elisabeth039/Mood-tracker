@@ -1,4 +1,3 @@
-import { useState, useRef, useEffect } from 'react';
 import Header from './components/Header.jsx';
 import Notes from './components/Notes.jsx';
 import Weather from './components/Weather.jsx';
