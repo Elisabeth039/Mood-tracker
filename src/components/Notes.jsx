@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import '../App.css'
+import '../styles/Notes.css'
 
 export default function Notes() {
   const [noteText, setNoteText] = useState('');

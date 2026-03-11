@@ -1,0 +1,27 @@
+.sbmBtn-container{
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 2;
+  max-height: 4rem;
+  padding:0 2rem;
+  align-items: center;
+}
+
+.date{
+  border: none;
+}
+
+.submit-btn{
+  background-color: var(--dark-brown);
+  color: white;
+  margin-left: 1rem;
+  padding:1rem 3rem;
+  font-size: 1.25rem;
+  box-shadow: 3px 2px 3px rgb(61, 61, 61);
+  border-radius: 12px;
+  border: none;
+}
+
+.submit-btn:hover{
+  background-color: #923905;
+}

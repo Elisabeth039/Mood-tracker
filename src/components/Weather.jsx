@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../App.css'
+import '../styles/Weather.css'
 
 export default function Weather() {
   const [selectedWth, setSelectedWth] =useState(null);

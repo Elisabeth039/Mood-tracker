@@ -1,4 +1,5 @@
 import '../App.css'
+import '../styles/Submit.css'
 
 export default function Submit() {
 return(

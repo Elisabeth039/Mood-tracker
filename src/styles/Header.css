@@ -1,0 +1,38 @@
+.header {
+  width:auto;
+  background-color: var(--coral);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0.25rem 2rem;
+  gap:2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.logo{
+  height: 80px;
+  max-width: 500px;
+}
+
+.menu {
+  list-style: none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  gap: 4rem;
+  align-items: center;
+}
+
+.menu li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--dark-brown);
+  cursor: pointer;
+}
+
+.menu li:hover{
+  color: var(--yellow);
+}

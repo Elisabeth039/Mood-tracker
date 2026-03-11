@@ -1,4 +1,5 @@
 import '../App.css'
+import '../styles/Mood.css'
 
 export default function Mood() {
     return(

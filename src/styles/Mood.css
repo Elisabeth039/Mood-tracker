@@ -1,0 +1,53 @@
+.mood-container{
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  gap:6rem;
+  padding: 3rem 4rem;
+  min-height: 8rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.mood-slider{
+  appearance: none;
+  height: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(to right,
+     red,
+     orange,
+     yellow,
+     lime,
+     green
+  );
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.mood-slider::-webkit-slider-thumb{
+  appearance: none;
+  width: 1.5rem;
+  height:1.5rem ;
+  background: var(--dark-brown);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0 0 0);
+  cursor:grab;
+}
+
+.mood-slider::-moz-range-thumb{
+  appearance: none;
+  width: 1.5rem;
+  height:1.5rem ;
+  background: var(--dark-brown);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0 0 0);
+  cursor:grab;
+}
+
+.mood-slider::-webkit-slider-thumb:hover{
+  transform: translateY(-2px);
+}
+
+.mood-slider::-moz-range-thumb:hover{
+  transform: translateY(-2px);
+}
