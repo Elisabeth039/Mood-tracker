@@ -1,9 +1,8 @@
-import { useState, useRef, useEffect } from 'react';
+import {useRef, useEffect } from 'react';
 import '../App.css'
 import '../styles/Notes.css'
 
-export default function Notes() {
-  const [noteText, setNoteText] = useState('');
+export default function Notes({noteText, setNoteText}) {
   const textAreaRef = useRef(null);
 
   useEffect(() =>{

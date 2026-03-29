@@ -1,9 +1,7 @@
-import {useState} from 'react';
 import '../App.css'
 import '../styles/Mood.css'
 
-export default function Mood() {
-  const [mood, setMood] = useState(5);
+export default function Mood({mood, setMood}) {
 
   const hue = (mood / 10) * 120;
   const thumbColor = `hsl(${hue}, 90%, 50%)`;

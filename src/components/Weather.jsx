@@ -1,9 +1,7 @@
-import { useState } from 'react'
 import '../App.css'
 import '../styles/Weather.css'
 
-export default function Weather() {
-  const [selectedWth, setSelectedWth] =useState(null);
+export default function Weather({selectedWth, setSelectedWth}) {
 
   const weathers = [
     {emoji: '☀️', value: 'sunny', id: 'sunny-btn'},
