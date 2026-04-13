@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/Logo.svg';
 import '../App.css'
 import '../styles/Header.css'
@@ -11,9 +12,15 @@ export default function Header() {
               className="logo"
             />
             <ul className = "menu">
-              <li>Daily log</li>
-              <li>Year review</li>
-              <li>About us</li>
+              <li>
+                <Link to="/">Daily log</Link>
+              </li>
+              <li>
+                <Link to="/month-review">Year review</Link>
+              </li>
+              <li>
+                <Link to="/about-us">About us</Link>
+              </li>
             </ul>
           </div>
   )
