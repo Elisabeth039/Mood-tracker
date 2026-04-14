@@ -29,6 +29,18 @@ body{
   grid-column: 1;
   color: var(--dark-brown);
   padding: 1rem;
+  margin-left: 2rem;
   font-size: 3rem;
   font-weight:600;
 }
+
+.heading {
+  grid-column: 2;
+  color: var(--dark-brown);
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight:600;
+}
+
+
+

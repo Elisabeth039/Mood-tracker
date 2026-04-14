@@ -16,7 +16,7 @@ export default function Header() {
                 <Link to="/">Daily log</Link>
               </li>
               <li>
-                <Link to="/month-review">Year review</Link>
+                <Link to="/month-review">Month review</Link>
               </li>
               <li>
                 <Link to="/about-us">About us</Link>
