@@ -18,7 +18,7 @@ function DailyLog() {
       <p className="greeting">How are you feeling today, user?</p>
       <Submit
         mood={mood} setMood={setMood}
-        electedWth={selectedWth} setSelectedWth={setSelectedWth}
+        selectedWth={selectedWth} setSelectedWth={setSelectedWth}
         noteText={noteText} setNoteText={setNoteText}
         selectedDate={selectedDate} setSelectedDate={setSelectedDate}
       />

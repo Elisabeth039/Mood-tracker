@@ -1,0 +1,47 @@
+.info-panel{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    grid-column: 2;
+    background-color: #98CA93;
+    min-height: 10rem;
+    max-height: 50rem;
+    margin: 4.6rem 0rem;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.info-label, .no-day, .no-entry{
+   font-size :1.4rem;
+   font-weight: 700;
+   color: var(--dark-brown);
+}
+
+.info-row{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.info-notRow{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.mood-info{
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: inline-block;
+    order: 1px solid color-mix(in srgb, var(--dark-brown) 70%, transparent);
+    color: #239623;
+}
+
+.weather-info{
+    font-size: 3rem;
+}
+
+.note-info{
+    font-size: 1.1rem;
+    font-weight: 100;
+}

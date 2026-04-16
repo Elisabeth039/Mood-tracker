@@ -25,6 +25,12 @@ body{
   gap: 1.5rem;
 }
 
+.monthReview-main{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 1.5rem;
+}
+
 .greeting {
   grid-column: 1;
   color: var(--dark-brown);
@@ -35,7 +41,7 @@ body{
 }
 
 .heading {
-  grid-column: 2;
+  grid-column: 3;
   color: var(--dark-brown);
   padding: 1rem;
   font-size: 3rem;

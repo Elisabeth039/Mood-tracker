@@ -19,14 +19,30 @@
   column-gap: 3rem;
 }
 
-.day{
+.day {
   aspect-ratio: 1/1;
-  background-color: var(--orange);
   height: 2.25rem;
   border: 1px solid color-mix(in srgb, var(--dark-brown) 30%, transparent);
   font-size: 1.5rem;
   border-radius: 2px;
   align-content: center;
   text-align: center;
-  box-shadow: 3px 3px 4px rgb(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--mood-color);
+}
+
+.data-day {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+}
+
+.noData-day {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.day.data-day.selected-day,
+.day.noData-day.selected-day  {
+  box-shadow: 1px 1px 1px 3px #FFDD00, 0 10px 20px rgba(255, 221, 0, 0.5) !important;
+  transform: translate(-4px, -6px) !important;
 }
