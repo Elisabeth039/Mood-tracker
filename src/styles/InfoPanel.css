@@ -5,8 +5,8 @@
     grid-column: 2;
     background-color: #98CA93;
     min-height: 10rem;
-    max-height: 50rem;
-    margin: 4.6rem 0rem;
+    max-height: 28rem;
+    margin: 0rem 0rem;
     border-radius: 15px;
     padding: 1rem;
 }
@@ -33,15 +33,21 @@
     font-size: 2.5rem;
     font-weight: 600;
     display: inline-block;
-    order: 1px solid color-mix(in srgb, var(--dark-brown) 70%, transparent);
     color: #239623;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.504);
 }
 
 .weather-info{
     font-size: 3rem;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.341);
 }
 
 .note-info{
     font-size: 1.1rem;
     font-weight: 100;
+    max-height: 16rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #006602 #adfec4;
 }

@@ -1,0 +1,51 @@
+.cards-container{
+    grid-column: 3;
+    min-height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card{
+    background-color: aquamarine;
+    height: 7rem;
+    width: 14rem;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: inset 6px 8px 8px rgba(0, 0, 0, 0.3);
+    opacity: 85%;
+    font-size: 1.25rem;
+}
+
+.card-info{
+    font-size: 3.5rem;
+    font-weight: 900;
+    height: 5rem;
+    text-align: center;
+    align-content: end;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.7);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#card-1{
+    background-color: var(--raspberry);
+}
+
+#card-2{
+    background-color: var(--orange);
+}
+
+#card-3{
+    background-color: var(--yellow);
+}
+
+#card-4{
+    background-color: var(--coral);
+}
+
+#total-logges{
+    color: var(--orange);
+}
+
+#streak{
+    color: var(--raspberry);
+}

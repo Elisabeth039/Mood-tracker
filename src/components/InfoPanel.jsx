@@ -15,7 +15,13 @@ export default function InfoPanel({ selectedDay }) {
     <div className="info-panel">
       <div className="info-row">
       <span className="info-label">Mood:</span>
-      <span className="mood-info">{selectedDay.mood}</span>
+      <span className="mood-info"
+       style={{
+           color: selectedDay.mood !== null 
+           ? `hsl(${(selectedDay.mood /10) * 120}, 80%, 50%)`
+           : '#666'
+      }}
+      >{selectedDay.mood}</span>
     </div>
       <div className="info-row">
       <span className="info-label">Weather:</span>

@@ -4,7 +4,11 @@
   grid-column: 1;
   gap:2rem;
   padding: 1.5rem 4rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   min-height: 8rem;
+  border-radius: 20px;
+  box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.236);
 }
 
 .month-picker{

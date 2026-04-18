@@ -2,11 +2,7 @@ import {useEffect, useState} from 'react';
 import '../styles/Calendar.css'
 import '../App.css'
 
-export default function Calendar ({onDayClick}) {
-  const [selectedMonth, setSelectedMonth] = useState (() =>{
-    const now = new Date();
-    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2,"0")}`;
-  });
+export default function Calendar ({onDayClick, selectedMonth, setSelectedMonth}) {
 
   const [days, setDays] = useState([]);
   const [selectedDayIndex, setSelectedDayIndex] = useState(null);
