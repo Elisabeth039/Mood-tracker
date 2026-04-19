@@ -5,15 +5,22 @@
   gap:2rem;
   padding: 1.5rem 4rem;
   margin-left: 1rem;
-  margin-bottom: 1rem;
   min-height: 8rem;
   border-radius: 20px;
   box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.236);
 }
 
 .month-picker{
+  height: 2rem;
   width: 6rem;
+  padding: 0 0.5rem;
   border: none;
+  border: 1px solid var(--dark-brown);
+  border-radius: 5px;
+}
+
+.month-picker:hover{
+    background-color: rgb(222, 222, 222);
 }
 
 .calendar{
@@ -49,4 +56,10 @@
 .day.noData-day.selected-day  {
   box-shadow: 1px 1px 1px 3px #FFDD00, 0 10px 20px rgba(255, 221, 0, 0.5) !important;
   transform: translate(-4px, -6px) !important;
+}
+
+.mPick-expBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

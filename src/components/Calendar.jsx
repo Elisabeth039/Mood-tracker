@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import ExportButton from '../components/ExportButton.jsx';
 import '../styles/Calendar.css'
 import '../App.css'
 
@@ -39,12 +40,15 @@ export default function Calendar ({onDayClick, selectedMonth, setSelectedMonth})
 
   return (
     <div className="calendar-container">
+      <div className='mPick-expBtn'>
         <input
         className='month-picker'
         type='month'
         value={selectedMonth}
         onChange={(e) => setSelectedMonth(e.target.value)}
         />
+        <ExportButton selectedMonth={selectedMonth}/>
+      </div>
         <div className='calendar'>
           {days.map((item, index) => (
             <div 
