@@ -41,3 +41,7 @@
 .menu li :hover{
   color: var(--yellow);
 }
+
+.about-us-btn:hover{
+  color: var(--yellow);
+}
