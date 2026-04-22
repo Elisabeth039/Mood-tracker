@@ -96,7 +96,7 @@ export default function StatCards ({selectedMonth}) {
 
         const mostCommonEmoji = weatherEmojis[mostCommon] || '—';
 
-        const longestStreak = calculateLongestStreak(monthEntries);
+        const longestStreak = calculateLongestStreak(entries);
 
         setStats ({
             totalLogges: totalLogged,

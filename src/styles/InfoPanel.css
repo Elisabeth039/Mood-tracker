@@ -6,9 +6,14 @@
     background-color: #98CA93;
     min-height: 10rem;
     max-height: 28rem;
+    max-width: 15rem;
     margin: 0rem 0rem;
     border-radius: 15px;
     padding: 1rem;
+}
+
+.no-day{
+    text-align: center;
 }
 
 .info-label, .no-day, .no-entry{
@@ -33,7 +38,6 @@
     font-size: 2.5rem;
     font-weight: 600;
     display: inline-block;
-    color: #239623;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.504);
 }
 
@@ -50,4 +54,5 @@
     overflow-x: hidden;
     scrollbar-width: thin;
     scrollbar-color: #006602 #adfec4;
+    overflow-wrap: break-word;
 }

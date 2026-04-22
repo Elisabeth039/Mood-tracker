@@ -22,17 +22,18 @@
   padding:0;
   display:flex;
   flex-direction:row;
-  gap: 4rem;
+  gap: 5rem;
   align-items: center;
 }
 
 .menu li {
   list-style: none;
+  font-size: 1.3rem;
 }
 
 .menu li a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: var(--dark-brown);
   cursor: pointer;
