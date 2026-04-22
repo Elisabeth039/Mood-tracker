@@ -1,16 +1,44 @@
-# React + Vite
+# Mood Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi! This is my Mood Tracker app built with React.
 
-Currently, two official plugins are available:
+It helps track daily mood, weather, notes, and see patterns over time in a simple and clean way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Track daily mood, weather
+- Add notes for each day
+- View monthly calendar with mood-based colors
+- See mood and weather related patterns visually
+- Longest streak calculation
+- Interactive UI with smooth navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How it works
 
-## Expanding the ESLint configuration
+All data is saved in localStorage, so it stays in your browser even after refresh.  
+The data is local, meaning it is only visible on your device.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech used
+
+- React
+- React Router
+- CSS
+
+## What I learned
+
+- React components and state
+- Working with localStorage
+- Building interactive UI
+- Structuring a small project
+- Debugging and improving code
+
+## Notes
+
+This project was made for learning and practice.  
+It’s not connected to a backend, so data is not shared between devices.
+
+## Future improvements (maybe)
+
+- Add authentication
+- Store data in a database
+- Sync between devices
