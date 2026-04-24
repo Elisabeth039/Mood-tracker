@@ -32,7 +32,7 @@ export default function AboutPanel({ isOpen, onClose }) {
               View on GitHub →
             </a>
             <a 
-              href="" 
+              href="https://www.figma.com/design/ETcadzgMxg4PNGXHmXI7e3/Mood-tracker?node-id=0-1&t=V4XG1qnKzZwDi5fm-1" 
               target="_blank" 
               rel="noopener noreferrer"
             >
